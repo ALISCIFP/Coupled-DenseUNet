@@ -1,9 +1,10 @@
-# H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes, TMI 2018. 
-by [Zengming Shen](https://scholar.google.com/citations?user=uVTzPpoAAAAJ&hl=en), [Hao Chen](http://appsrv.cse.cuhk.edu.hk/~hchen/), [Xiaojuan Qi](https://xjqi.github.io/), [Qi Dou](http://appsrv.cse.cuhk.edu.hk/~qdou/), [Chi-Wing Fu](http://www.cse.cuhk.edu.hk/~cwfu/), [Pheng-Ann Heng](http://www.cse.cuhk.edu.hk/~pheng/). 
+# C-DenseUNet: 2D-3D Coupled Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes. 
+by [Zengming Shen](https://github.com/ALISCIFP),Bogdan Georgescu, Thomas S. Huang.
 
 ### Introduction
 
-This repository is for our TMI 2018 paper '[H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes](http://arxiv.org/pdf/1709.07330.pdf)'.
+This repository is for the source code of  C-DenseUNet: 2D-3D Coupled Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes. 
+ 
 
 
 ### Usage
@@ -33,40 +34,23 @@ This repository is for our TMI 2018 paper '[H-DenseUNet: Hybrid Densely Connecte
    sh bash_train.sh
    ```
 
-4. Train H-DenseUnet:
+4. Train C-DenseUnet:
     Load your trained model and run   
     
    ```shell
    CUDA_VISIBLE_DEVICES='0' python train_hybrid.py -arch 3dpart
    ```
 
-5. Train H-DenseUnet in end-to-end way:
+5. Train C-DenseUnet in end-to-end way:
     
    ```shell
    CUDA_VISIBLE_DEVICES='0' python train_hybrid.py -arch end2end
    ```
 
 
-## Citation
-
-If H-DenseUNet is useful for your research, please consider citing:
-
-  ```shell
-  @article{li2018h,
-  title={H-denseunet: Hybrid densely connected unet for liver and tumor segmentation from ct volumes},
-  author={Li, Xiaomeng and Chen, Hao and Qi, Xiaojuan and Dou, Qi and Fu, Chi-Wing and Heng, Pheng-Ann},
-  journal={IEEE transactions on medical imaging},
-  volume={37},
-  number={12},
-  pages={2663--2674},
-  year={2018},
-  publisher={IEEE}
-  }
-
-  ```
 
 
 ### Questions
 
-Please contact 'xmli@cse.cuhk.edu.hk'
+Please contact 'szm0219@gmail.com'
 
